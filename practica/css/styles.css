@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #252a34; background: #f5f7fa; line-height: 1.6; }
+h1,h2,h3,p { margin-top: 0; }
+a { color: inherit; }
+button { font-family: inherit; }
+.hero-label,.section-label { font-size: .78rem; font-weight: bold; letter-spacing: 2px; margin-bottom: 10px; }
+.section-heading,.resources-heading { text-align: center; }
+.hero { background: linear-gradient(135deg,#182848,#304f78); color: white; padding: 70px 20px; text-align: center; }
+.hero-content { max-width: 760px; margin: 0 auto; }
+.hero h1 { font-size: 2.6rem; margin-bottom: 18px; }
+.hero-text { max-width: 600px; margin: auto; font-size: 1.05rem; }
+.pricing-section { max-width: 1100px; margin: 0 auto; padding: 65px 25px; }
+.section-heading { max-width: 650px; margin: 0 auto 45px; }
+.section-heading h2 { font-size: 2rem; }
+.pricing-list { display: grid; grid-template-columns: repeat(3,1fr); gap: 25px; align-items: stretch; }
+.pricing-card { position: relative; background: white; border: 1px solid #e0e5eb; border-radius: 14px; padding: 30px 25px; box-shadow: 0 8px 25px rgba(30,50,70,.08); display: flex; flex-direction: column; }
+.pricing-card:hover { transform: translateY(-5px); transition: .25s ease; }
+.pricing-card.featured { border: 2px solid #3b82f6; }
+.popular-tag { position: absolute; top: 0; left: 50%; transform: translate(-50%,-50%); background: #3b82f6; color: white; padding: 7px 15px; border-radius: 20px; font-size: .7rem; font-weight: bold; }
+.card-header { text-align: center; }
+.card-header h3 { font-size: 1.45rem; margin-bottom: 10px; }
+.card-header p { color: #667085; min-height: 70px; }
+.price-box { text-align: center; background: #f0f5ff; border-radius: 10px; padding: 18px; margin: 20px 0; }
+.price-box strong { font-size: 2rem; color: #182848; }
+.price-box span { color: #667085; }
+.feature-list { padding-left: 20px; margin: 0 0 25px; flex-grow: 1; }
+.feature-list li { margin-bottom: 10px; }
+.select-button { width: 100%; border: none; border-radius: 8px; padding: 13px; background: #182848; color: white; font-weight: bold; cursor: pointer; }
+.select-button:hover { background: #3b82f6; }
+.support-banner { background: linear-gradient(135deg,#252a34,#3d4655); color: white; padding: 60px 25px 45px; text-align: center; }
+.support-content { max-width: 720px; margin: 0 auto 45px; }
+.support-content h1 { font-size: 2.4rem; margin-bottom: 15px; }
+.support-content p { max-width: 650px; margin-left: auto; margin-right: auto; }
+.support-options { max-width: 1000px; margin: auto; display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; }
+.support-item { padding: 20px; border-left: 2px solid #6ea8fe; text-align: left; }
+.support-number { display: inline-block; font-size: .75rem; color: #8db8ff; font-weight: bold; margin-bottom: 10px; }
+.support-item h2 { font-size: 1.1rem; }
+.support-item p { color: #d5dae2; font-size: .9rem; }
+.resources-section { max-width: 1100px; margin: auto; padding: 70px 25px; }
+.resources-heading { max-width: 720px; margin: 0 auto 50px; }
+.resources-heading h1 { font-size: 2rem; }
+.resources-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 25px; }
+.resource-card { background: white; border-radius: 12px; padding: 28px; border: 1px solid #e1e6ec; box-shadow: 0 5px 18px rgba(40,50,65,.06); }
+.resource-card:hover { border-color: #3b82f6; transform: translateY(-4px); transition: .25s ease; }
+.resource-icon { width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 10px; background: #e8f0ff; color: #2859a8; font-weight: bold; margin-bottom: 20px; }
+.resource-card h2 { font-size: 1.15rem; margin-bottom: 12px; }
+.resource-card p { color: #667085; font-size: .92rem; min-height: 95px; }
+.resource-card a { color: #2859a8; text-decoration: none; font-weight: bold; font-size: .88rem; }
+.resource-card a:hover { text-decoration: underline; }
+.main-footer { background: #182848; color: white; text-align: center; padding: 25px 15px; font-size: .85rem; }
+@media (max-width:850px) { .pricing-list { grid-template-columns: 1fr; max-width: 500px; margin: auto; } .support-options { grid-template-columns: repeat(2,1fr); } .resources-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width:550px) { .hero h1 { font-size: 2rem; } .support-content h1 { font-size: 1.8rem; } .support-options,.resources-grid { grid-template-columns: 1fr; } .pricing-section,.resources-section { padding-left: 18px; padding-right: 18px; } }
